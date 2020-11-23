@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+  border-color: red;
+}
+
+body {
+  background: url("http://csssecrets.io/images/stone-art.jpg") no-repeat;
+  background-size: cover;
+  max-width: 75vw;
+}
+
+img {
+  border: 1rem solid hsla(0, 0%, 0%, 0.5);
+  background: white;
+  background-clip: padding-box;
+  overflow: clip;
+  width: 75vw;
+}
+
+h1 {
+  color: hsla(0, 0%, 100%, 1);
+}
+
+span {
+  color: hsla(0, 0%, 100%, 1);
+}
