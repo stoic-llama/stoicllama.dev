@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dec 2020 - stoicllama - Blog</title>
+    <meta name="description" content="stoicllama - Personal Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <article>
+      <h3>CSS: Background-Clip</h3>
+      <p>
+        Published
+        <time datetime="2020-12-24T01:30" pubdate>
+          1:30am on December 24th, 2020
+        </time>
+        by stoicllama
+      </p>
+      <p>
+        This week marks the first week that I am able to start learning CSS,
+        super psyched! Today small snippets of what I learned about translucent
+        borders from the very talented Lea Verou's book,
+        <a
+          href="https://www.amazon.com/CSS-Secrets-Lea-Verou/dp/1449372635?tag=leaverou-20"
+          >CSS Secrets: Better Solutions To Everybday Web Design Problems</a
+        >.
+      </p>
+      <p>
+        Click <a href="/demo/translucent-borders.html">here</a> for the demo.
+      </p>
+      <p>
+        Notice that applying hsla on border property is not enough. This is
+        because the background property color extends beneath the border. This
+        is why the supposed semi-transparent border has a green hue. Therefore
+        we need to "clip" the background from the border area and only within
+        the content and padding area.
+      </p>
+    </article>
+
+    <script src="" async defer></script>
+  </body>
+</html>
