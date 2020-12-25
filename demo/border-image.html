@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dec 24 - Demo - Border-Image</title>
+    <style>
+      .code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.8rem;
+        background-color: lightgrey;
+        max-width: 75vw;
+      }
+
+      .code__list {
+        list-style: none;
+      }
+
+      .code__em {
+        font-weight: bold;
+      }
+
+      .circle {
+        border: 20px solid black;
+        border-image-source: url(/img/circles.png);
+        border-image-slice: 33%; /* 20 pixels */
+        border-image-width: 20px;
+        border-image-repeat: round; /* image rescaled to fill area with one part of drawing in one region */
+        max-width: 70vw;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>The Problem</h2>
+      <p>
+        You want to use a picture as a background for borders with the
+        border-image property.
+      </p>
+    </section>
+    <section>
+      <h2>The Solution</h2>
+
+      <p>
+        There are a few attributes in the border-image property. If you look at
+        the official CSS Spec for
+        <a href="https://drafts.csswg.org/css-backgrounds-3/#border-images">
+          border-image</a
+        >, you will find several key attributes for this property. Example
+        below.
+      </p>
+
+      <div class="code">
+        <ul class="code__list">
+          <li>border: 20px solid black;</li>
+          <li>border-image-source: url(/img/circles.png);</li>
+          <li>border-image-slice: 20;</li>
+          <li>border-image-width: 20px;</li>
+          <li>border-image-repeat: round;</li>
+      </div>
+
+      <div class="circle">
+        <span>
+          The contents of this box is surrounded by the patterns from the border
+          image.
+        </span>
+      </div>
+
+      <p>
+        <strong>border-image-slice</strong> property refers to the "inward
+        offsets" from the top/right/bottom/left edges of the image.
+      </p>
+      <p>
+        <strong>border-image-width</strong> property refers to the "inward
+        distances" from the top/right/bottom/left sides of the border image
+        area. Note If two opposite border-image-width offsets are large enough
+        that they overlap, then the used values of all border-image-width
+        offsets are proportionally reduced until they no longer overlap.
+      </p>
+      <p>
+        <strong>border-image-repeat</strong> property refers to how the images
+        for the sides and the middle part of the border image are scaled and
+        tiled (i.e., stretch, repeat, round, space).
+      </p>
+      <p>
+        Effectively slice draws the 9 regions that parts of the image will be
+        used. Width is used to draw the parts of the image within the sliced
+        regions. Repeat is also used to draw the parts of the image within the
+        sliced regions.
+      </p>
+      <span>Final notes:</span>
+      <ul>
+         <li>The sample circles.png file is 60*60 px dimensions, 
+             where each circle is 20 out of 60 (3 circles in rows/cols).
+             So to get one circle painted into each sliced region, 
+             you need to define slice by 20px for painting surface, 
+             and width by 20px of the content to be displayed. 
+         </li>
+         <li>Make sure to add a border property to define the area where you can 
+              use border-image to play with. If you do not define border the border-image 
+              will not display.</li>
+         
+      </ul>
+    </section>
+
+
+  </body>
+</html>
