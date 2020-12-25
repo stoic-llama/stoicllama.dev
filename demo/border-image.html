@@ -29,6 +29,15 @@
         max-width: 70vw;
       }
 
+      .diamonds {
+        border: 30px solid black;
+        border-image-source: url(/img/diamonds.png);
+        border-image-slice: 30; /* 20 pixels */
+        border-image-width: 30px;
+        border-image-repeat: round; /* image rescaled to fill area with one part of drawing in one region */
+        max-width: 70vw;
+      }
+
     </style>
   </head>
   <body>
@@ -103,7 +112,19 @@
          
       </ul>
     </section>
+    <hr>
+    <section>
+        <p>Here we see an example of multiple borders:</p>
 
+        <div class="diamonds">
+            <div class="circle">
+                <span>
+                The contents of this box is surrounded by the patterns from the border
+                image.
+                </span>
+            </div>
+        </div>
+    </section>
 
   </body>
 </html>
