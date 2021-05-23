@@ -8,27 +8,183 @@
     <meta name="description" content="Stoic Llama Personal Site" />
     <meta name="author" content="John Liu" />
 
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <nav class="nav">
-      <ul>
-        <li>
-          <span><a href="/blog/20201223.html">Blog</a> -</span>
-        </li>
-        <li>
-          <span> - <a href="#">About</a> - </span>
-        </li>
-        <li>
-          <span> - <a href="#">Projects</a> - </span>
-        </li>
-        <li>
-          <span> - <a href="#">Contact Me</a></span>
-        </li>
+    <header class="[ full-bleed peach ]">
+      <span class="[ visually-hidden ]">stoic-llama.dev: Homepage</span>
+      <div class="[ box-flex center ]">
+      <div class="logo">
+        <a href="#">
+          <!-- Source: https://www.dkfindout.com/us/animals-and-nature/camels/llama/ -->
+          <img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/A-DK-dreamstime-18996450_s0ojto.jpg" />
+        </a>
+      </div>
+      <ul class="nav">
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
-    </nav>
-    <header><h2>This is the first page of my personal site!</h2></header>
+      </div>
+        </header>
+    <main>
+      <section class="[ full-bleed beige ]">
+        <article class="[ hero center ]">
+          <div>
+            <h1>
+              👋
+              <span class="cursive">Hi, I'm John!</span>
+            </h1>
+            <h1 class="line-height-lg">I'm a graduate student in computer science
+              and I'm passionate about <span class="highlight">frontend development.</span>
+            </h1>
+          </div>
+          <div class="hero-img-container">
+            <!-- Source: https://www.behance.net/lourenzhervian -->
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/fa7bca85821055.5d87ae898566a.jpg" alt="portrait of john" />
+          </div>
+        </article>
+      </section>
+      <section id="Skills" class="[ full-bleed lightblue ]">
+        <article class="[ center ]">
+          <h2>
+            🛠️
+            <span>Skills</span>
+          </h2>
+          <div class="[ skills box-flex ]">
+            <div class="[ grid ]">
+              <div class="box-icon">
+                <i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="box-icon">
+                <i class="devicon devicon-css3-plain" aria-hidden="true"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="box-icon">
+                <i class="devicon-confluence-original"></i>
+                <p>Jira</p>
+              </div>
+              <div class="box-icon">
+                <i class="devicon-bootstrap-plain"></i>
+                <p>Bootstrap</p>
+              </div>
+            </div>
+            <div class="[ grid ]">
+              <div class="box-icon">
+                <i class="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="box-icon">
+                <i class="devicon devicon-git-plain" aria-hidden="true"></i>
+                <p>Git</p>
+              </div>
+              <div class="box-icon">
+                <i class="devicon-spring-plain"></i>
+                <p>SpringBoot</p>
+              </div>
+              <div class="box-icon">
+                <i class="devicon-mysql-plain"></i>
+                <p>MySql</p>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Projects" class="[ full-bleed green ]">
+        <article class="[ projects center ]">
+          <h2>
+            🚀
+            <span>Projects</span>
+          </h2>
+          <div class="[ box-flex ]">
+            <div class="[ line-height ] [ proj-desc ]">
+              <h3>Special Education (SPED) Department Grade Workflow Management System</h3>
+              <p> A proof of concept developed for the Special Education (SPED) Department in CCSU. The frontend was Bootstrap and Spring Thymeleaf. The backend was Spring Boot and MySql database for persistence.
+              </p>
+              <p>This was a programming project with two other CCSU graduate students Christopher Smith and Jhmar Galloway for class CS510.
+              </p>
+              <div>
+                <div class="[ box-flex flex-start ]">
+                  <div>
+                    <i class="devicon-bootstrap-plain"></i>
+                  </div>
+                  <div>
+                    <i class="devicon-spring-plain"></i>
+                  </div>
+                  <div>
+                    <i class="devicon-mysql-plain"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video">
+              <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RyfakFPF_8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="About" class="[ full-bleed purple ]">
+        <article class="[ about center ]">
+          <h2>
+            🧑‍🔧
+            <span>About Me</span>
+          </h2>
+          <div>
+            <div class="about-image">
+              <img src="https://cdn.shopify.com/s/files/1/1933/1869/files/Image-1_4d27913b-2a79-4283-afaa-0e1cea5a9672.jpg?v=1617912256" alt="john on the road" />
+            </div>
+            <div class="line-height">
+              <p>I am currently enrolled in the CCSU Software Engineering graduate program, with an expected graduation date of 2022. I've worn many different hats over the past 10 years of my <a href="https://www.linkedin.com/in/johnjwliu">career</a>, from Business Analyst to Program Manager to Scrum Master, and am looking to transition into a technical role.
+              </p>
+              <p>
+                Outside of work, I like to travel, run, play volleyball, and hang out with some friends over a night of board/card games. <a href="https://www.youtube.com/watch?v=MLv_9XNaM4U">Taco Cat Goat Cheese Pizza</a>, anyone?
+              </p>
+            </div>
+          </div>
+
+        </article>
+      </section>
+      <section id="Contact" class="[ full-bleed beige ]">
+        <article class="[ center ]">
+          <h2>
+            ☎️
+            <span>Contact Me</span>
+          </h2>
+          <h3 class="contact-me">
+            I'm always happy to meet new friends.
+          </h3>
+          <p class="line-height">
+            If you are aware of any opportunities in front-end development, or just want to say hi, feel free to <a href="mailto:stoic.llama@gmail.com">pop me an email</a> or <a href"https://twitter.com/theStoicLlama">find me on twitter</a>!
+          </p>
+    <!--       <ul>
+            <li>
+              <a href="https://twitter.com/theStoicLlama" target="_blank" aria-label="open link to john liu's Twitter page."><i class="fab fa-twitter" aria-hidden="true"></i><span class="visually-hidden">Twitter</span></a>
+            </li>
+            <li>
+              <a href="https://github.com/stoic-llama" target="_blank" aria-label="open link to john liu's github page."><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+            </li>
+          </ul> -->
+        </article>
+      </section>
+    </main>
+    <footer class="[ box-flex full-bleed peach ]">
+      <div>
+        <small>
+          © 2021 | Designed &amp; coded by John Liu (aka stoicllama) <span class="llama">🦙</span>
+        </small>
+      </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
   </body>
